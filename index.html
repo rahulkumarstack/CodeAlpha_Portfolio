@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahul Kumar | Frontend Developer Portfolio</title>
+  <meta name="description" content="Personal portfolio of Rahul Kumar — Frontend Developer. Built for the CodeAlpha Frontend Development Internship, Task 3." />
+
+  <!-- Google Fonts: Sora (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= AMBIENT BACKGROUND ================= -->
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora__blob aurora__blob--one"></span>
+    <span class="aurora__blob aurora__blob--two"></span>
+  </div>
+
+  <!-- ================= STICKY NAVIGATION ================= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">RK<span class="nav__logo-dot">.</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#education" class="nav__link">Education</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#" class="nav__resume-btn" download>Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero__content reveal">
+        <p class="hero__eyebrow">Frontend Developer &mdash; CodeAlpha Intern</p>
+        <h1 class="hero__name">Hi, I'm Rahul Kumar</h1>
+        <p class="hero__role">
+          I build <span class="typing" id="typingText"></span><span class="typing-cursor">|</span>
+        </p>
+        <p class="hero__desc">
+          I'm Rahul Kumar, a B.Tech CSE student passionate about creating modern, responsive, and user-friendly web applications using HTML, CSS, and JavaScript.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero__portrait reveal">
+        <div class="hero__portrait-glow"></div>
+        <div class="hero__portrait-frame">
+          <!-- Replace src with your own photo -->
+          <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Rahul&backgroundColor=b6e3f4" alt="Portrait of Rahul Kumar" />
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+      <div class="section-heading reveal">
+        <span class="section-heading__tag">01 &mdash; About</span>
+        <h2 class="section-heading__title">A little about me</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            I'm a frontend developer with a focus on building interfaces that feel
+            fast, intuitive, and considered down to the last pixel. My interest
+            started with tinkering on small HTML pages, and has grown into a habit
+            of picking apart good design systems to understand what makes them work.
+          </p>
+          <p>
+            Currently completing the <strong>CodeAlpha Frontend Development
+            Internship</strong>, where I'm sharpening my skills in vanilla
+            JavaScript, responsive layout systems, and building UI without leaning
+            on frameworks — so I understand what's happening under the hood. I'm
+            also pursuing my engineering degree at <strong>Mangalmay Institute of
+            Engineering and Technology (AKTU)</strong>.
+          </p>
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-num" data-count="3">0</span>
+              <span class="about__stat-label">Projects Built</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num" data-count="3">0</span>
+              <span class="about__stat-label">Internship Tasks</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num" data-count="100">0</span>
+              <span class="about__stat-label">% Vanilla Code</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__card reveal">
+          <ul class="about__facts">
+            <li><span>Based in</span><strong>Bihar, India</strong></li>
+            <li><span>Focus</span><strong>Frontend Development</strong></li>
+            <li><span>Currently</span><strong>CodeAlpha Intern</strong></li>
+            <li><span>Studying at    </span><strong>    Mangalmay Institute of Engineering and Technology (AKTU)</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="skills" id="skills">
+      <div class="section-heading reveal">
+        <span class="section-heading__tag">02 &mdash; Skills</span>
+        <h2 class="section-heading__title">What I work with</h2>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skill reveal">
+          <div class="skill__head">
+            <span>HTML5</span><span class="skill__percent">95%</span>
+          </div>
+          <div class="skill__track">
+            <div class="skill__bar" data-width="95"></div>
+          </div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill__head">
+            <span>CSS3 &amp; Responsive Design</span><span class="skill__percent">90%</span>
+          </div>
+          <div class="skill__track">
+            <div class="skill__bar" data-width="90"></div>
+          </div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill__head">
+            <span>JavaScript (Vanilla)</span><span class="skill__percent">85%</span>
+          </div>
+          <div class="skill__track">
+            <div class="skill__bar" data-width="85"></div>
+          </div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill__head">
+            <span>Git &amp; GitHub</span><span class="skill__percent">80%</span>
+          </div>
+          <div class="skill__track">
+            <div class="skill__bar" data-width="80"></div>
+          </div>
+        </div>
+        <div class="skill reveal">
+  <div class="skill__head">
+    <span>C Programming</span>
+    <span class="skill__percent">85%</span>
+  </div>
+  <div class="skill__track">
+    <div class="skill__bar" data-width="85"></div>
+  </div>
+</div>
+
+<div class="skill reveal">
+  <div class="skill__head">
+    <span>DSA (Java)</span>
+    <span class="skill__percent">75%</span>
+  </div>
+  <div class="skill__track">
+    <div class="skill__bar" data-width="75"></div>
+  </div>
+</div>
+
+        <div class="skill reveal">
+          <div class="skill__head">
+            <span>UI / UX Fundamentals</span><span class="skill__percent">75%</span>
+          </div>
+          <div class="skill__track">
+            <div class="skill__bar" data-width="75"></div>
+          </div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill__head">
+            <span>Accessibility (a11y)</span><span class="skill__percent">70%</span>
+          </div>
+          <div class="skill__track">
+            <div class="skill__bar" data-width="70"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="projects" id="projects">
+      <div class="section-heading reveal">
+        <span class="section-heading__tag">03 &mdash; Projects</span>
+        <h2 class="section-heading__title">Things I've built</h2>
+      </div>
+
+      <div class="projects__grid">
+
+        <article class="project-card reveal">
+          <div class="project-card__glow"></div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Task 1</span>
+            <h3 class="project-card__title">Image Gallery</h3>
+            <p class="project-card__desc">
+              A responsive image gallery with filterable categories and a smooth
+              lightbox viewer, built with semantic HTML and modern CSS grid.
+            </p>
+            <div class="project-card__stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noopener">Live Demo &rarr;</a>
+              <a href="https://github.com/rahulkumarstack/codeAlpha_imagegallery" target="_blank" rel="noopener">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__glow"></div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Task 2</span>
+            <h3 class="project-card__title">Glassmorphism Calculator</h3>
+            <p class="project-card__desc">
+              A fully functional calculator with keyboard support and a frosted
+              glass UI, built entirely in vanilla JavaScript.
+            </p>
+            <div class="project-card__stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noopener">Live Demo &rarr;</a>
+              <a href="https://github.com/rahulkumarstack/codeAlpha_Calculator-" target="_blank" rel="noopener">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__glow"></div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Task 3</span>
+            <h3 class="project-card__title">Personal Portfolio</h3>
+            <p class="project-card__desc">
+              The site you're looking at right now — a dark, animated portfolio
+              with scroll reveals and a typing hero, built from scratch.
+            </p>
+            <div class="project-card__stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noopener">Live Demo &rarr;</a>
+              <a href="https://github.com/rahulkumarstack/CodeAlpha_Portfolio" target="_blank" rel="noopener">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="education" id="education">
+      <div class="section-heading reveal">
+        <span class="section-heading__tag">04 &mdash; Education</span>
+        <h2 class="section-heading__title">Academic background</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2025 &mdash; Present</span>
+            <h3 class="timeline__title">B.Tech in Computer Science</h3>
+            <p class="timeline__org">Mangalmay Institute of Engineering and Technology (AKTU)</p>
+            <p class="timeline__desc">
+              Coursework in data structures, web technologies, and software
+              engineering fundamentals.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2026</span>
+            <h3 class="timeline__title">Frontend Development Internship</h3>
+            <p class="timeline__org">CodeAlpha</p>
+            <p class="timeline__desc">
+              Hands-on internship building an image gallery, an interactive
+              calculator, and this portfolio using vanilla HTML, CSS, and JS.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2024</span>
+            <h3 class="timeline__title">Higher Secondary Education</h3>
+            <p class="timeline__org">School Name= Raj Inter College, Bettiah, west-champaran, 845450</p>
+            <p class="timeline__desc">
+              Focused on Computer Science, Mathematics, and Physics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+      <div class="contact__card reveal">
+        <div class="section-heading section-heading--center">
+          <span class="section-heading__tag">05 &mdash; Contact</span>
+          <h2 class="section-heading__title">Let's work together</h2>
+          <p class="contact__subtitle">
+            Have a project in mind, or just want to say hi? My inbox is open.
+          </p>
+        </div>
+
+        <div class="contact__socials">
+          <a href="https://github.com/rahulkumarstack" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .3.2.66.79.55C20.71 21.38 24 17.07 24 12c0-6.35-5.15-11.5-12-11.5Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/rahulkumarstack" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="mailto:rk72562006@gmail.com" class="social-btn" aria-label="Send an email">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19.38 2H2.62L12 12.5 21.38 6ZM1 7.24V18h22V7.24l-10.6 7.4a1 1 0 0 1-1.14 0L1 7.24Z"/></svg>
+          </a>
+        </div>
+
+        <a href="mailto:rk72562006@gmail.com" class="btn btn--primary contact__email-btn">
+          Say Hello &mdash;rk72562006@gmail.com
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Rahul Kumar. Built for the CodeAlpha Frontend Development Internship.</p>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
